@@ -30,14 +30,24 @@ int desempilha(struct pilha *p, int *retorno){
     return 1;
 }
 
-int elem_topo(struct pilha *p){
+int topo(struct pilha *p){
     if not pilha_vazia) {
         return p->topo->valor;
     }else{
         return NULL;
     }
 }
-
+int busca_pilha(struct pilha *p, int v){
+    struct no_pilha *aux = p->topo;
+    while(aux != NULL){
+        if (aux->valor == v){
+            return 1;
+        } else{
+        aux = aux->prox;
+        }
+    }
+    return 0; 
+}
 void mostra_pilha(struct pilha *p){
     struct no_pilha *aux = p->topo;
     while(aux != NULL){
