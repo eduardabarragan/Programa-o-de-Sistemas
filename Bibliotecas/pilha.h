@@ -11,7 +11,7 @@ void inicializa_pilha(struct pilha *p);
 int pilha_vazia(struct pilha *p);
 int empilha(struct pilha *p, int valor);
 int desempilha(struct pilha *p, int *retorno);
-//int topo(struct pilha *p);
+int topo(struct pilha *p);
 void mostra_pilha(struct pilha *p);
-//int busca_pilha(struct pilha *p, int v);
+int busca_pilha(struct pilha *p, int v);
 #endif
