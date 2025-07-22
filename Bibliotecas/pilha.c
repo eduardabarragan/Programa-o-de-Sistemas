@@ -31,7 +31,7 @@ int desempilha(struct pilha *p, int *retorno){
 }
 
 int topo(struct pilha *p){
-    if not pilha_vazia) {
+    if not (pilha_vazia(p)) {
         return p->topo->valor;
     }else{
         return NULL;
