@@ -14,7 +14,6 @@ void inicializa_fila(struct fila *p);
 int fila_vazia(struct fila *p);
 int insere_fila(struct fila *p, int valor);
 int remove_fila(struct fila *p, int *retorno);
-//int topo(struct pilha *p);
-void mostra_pilha(struct fila *p);
-//int busca_pilha(struct pilha *p, int v);
+void mostra_fila(struct fila *p);
+int busca_fila(struct pilha *p, int v);
 #endif
