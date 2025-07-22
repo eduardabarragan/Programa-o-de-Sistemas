@@ -29,15 +29,6 @@ int insere_fila(struct fila *f, int valor){
     return 1;
 }
 
-int elemento_topo(struct fila *f){
-    if (fila_vazia(f)) {
-        return -999;
-    }
-    else {
-        return f->inicio->valor;
-    }
-}
-
 int remove_fila(struct fila *f, int *retorno){
     if(fila_vazia(f)){
         return -999;
